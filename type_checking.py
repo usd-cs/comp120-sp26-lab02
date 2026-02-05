@@ -22,4 +22,4 @@ val1 = loyd("yor")
 print(val1)
 
 val2 = anya([5,7,3], -2)
-print(val)
+print(val2)
