@@ -1,5 +1,4 @@
 import turtle
-from typing import List
 
 def difference(x, y):
     """Calculates the absolute difference between two numbers.
@@ -11,10 +10,10 @@ def difference(x, y):
     Returns:
         int: Absolute difference between x and y
     """
-    diff = y - x # this has a bug (don't fix it yet though)
+    diff = abs(y - x)
     return diff
 
-def draw_square(my_turtle: turtle.Turtle, size: int):
+def draw_square(my_turtle, size):
     for i in range(4):
         my_turtle.forward(size)
         my_turtle.left(90)
@@ -24,7 +23,7 @@ def sum(nums):
     """Calculates the sum a list of integers.
 
     Args:
-        nums (List[int]): The list of integers to sum up.
+        nums (list[int]): The list of integers to sum up.
 
     Returns:
         int: The sum
@@ -40,12 +39,12 @@ def sum(nums):
     
     return total
 
-def count_matches(target: int, nums: List[int]) -> int:
+def count_matches(target: int, nums: list[int]) -> int:
     """Finds the number of times target occurs in the given list (nums).
 
     Args:
         target (int): The number to look for.
-        nums (List[int]): The list of numbers to search through.
+        nums (list[int]): The list of numbers to search through.
 
     Returns:
         int: Number of times target appears in nums
