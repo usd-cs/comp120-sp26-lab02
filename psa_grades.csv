@@ -1,0 +1,5 @@
+Student,Grade,Comments
+Aaron,8.5,Missing type hints
+Tori,6,foo function missing,bar fails some tests
+Greg,10,Amazing work
+Mohammed,9,Print formatting is incorrect
